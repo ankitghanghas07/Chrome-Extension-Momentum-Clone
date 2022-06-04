@@ -1,0 +1,134 @@
+*{
+    margin:  0;
+    color : white;
+    font-family: 'Roboto', sans-serif;
+}
+
+body, html{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+#bgImg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    margin: 0;
+    z-index: -1;
+}
+.container{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+#header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 25px;
+    font-size: 1.30rem;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#time{
+    font-weight:bolder;
+    font-size: 6rem;
+}
+
+#quote{
+    max-width: 600px;
+    font-size: 1.25rem;
+}
+
+/* #footer{
+    display: flex;
+    justify-content: flex-end;
+} */
+
+#card{
+    background-color: rgba(0, 0, 0, 0.4);
+    max-width: 200px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    text-align: center;
+}
+
+#card h1{
+    margin: 0 auto 20px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0 10px;
+}
+
+form{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+    margin: auto;
+}
+
+#input{
+    color: #999;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 5px;
+    padding: 1rem 2 rem;
+    display: block;
+    max-width: 90%;
+    font-size: 1rem;
+}
+
+.todos li{
+    text-align: left;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-top: 1px solid #efefef;
+    color: rgb(194, 190, 190);
+    margin: 0 10px;
+}
+
+.todos li.completed{
+    text-decoration: line-through;
+    color: #dbd6d6;
+}
+
+.Todofooter{
+    margin: 20px 0;
+    font-size: 0.75rem;
+}
+
+#footer #todo{
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+}
+
+#todo{
+    cursor: pointer;
+}
+
+.toggle-content{
+    display: none;
+    transition: opacity 750ms ease-in-out;
+}
+
